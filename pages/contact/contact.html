@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contactez-moi</title>
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="icon" type="image/png" href="../../media/me.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="logo">
+          <h2>Yassine M Développeur</h2>
+        </div>
+        <ul class="nav-links">
+          <li><a href="../../index.html">CV</a></li>
+          <li><a href="../projects/projects.html">Projets</a></li>
+          <li><a href="contact.html" class="active">Contactez</a></li>
+          <li><a href="../quiz/quiz.html">Quiz</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="contact">
+      <div class="contact-container">
+        <h1>Contactez-moi</h1>
+        <p>
+          N'hésitez pas à me contacter ! Je serais ravi d'échanger avec vous.
+        </p>
+
+        <form id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Nom complet</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Entrez votre nom"
+              required
+            />
+            <small class="error-msg"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Adresse e-mail</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Entrez votre e-mail"
+              required
+            />
+            <small class="error-msg"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              rows="5"
+              placeholder="Écrivez votre message ici"
+              required
+            ></textarea>
+            <small class="error-msg"></small>
+          </div>
+
+          <button type="submit" class="btn-submit">Envoyer le message</button>
+        </form>
+      </div>
+    </section>
+
+    <script src="contact.js"></script>
+    <footer>
+      <p>Fait avec <i class="fa fa-heart loveI"></i> par Yassine Maamri</p>
+    </footer>
+  </body>
+</html>

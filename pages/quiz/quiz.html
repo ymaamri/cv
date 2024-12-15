@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz HTML, CSS, JS</title>
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="quiz.css" />
+    <link rel="icon" type="image/png" href="../../media/me.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- Section En-tête -->
+    <header class="header">
+      <nav class="nav">
+        <div class="logo">
+          <h2>Yassine M Développeur</h2>
+        </div>
+        <ul class="nav-links">
+          <li><a href="../../index.html">CV</a></li>
+          <li><a href="../projects/projects.html">Projets</a></li>
+          <li><a href="../contact/contact.html">Contactez</a></li>
+          <li><a href="quiz.html" class="active">Quiz</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="video-container">
+      <video controls width="100%" height="auto">
+        <source src="../../media/video.mp4" type="video/mp4" />
+        Votre navigateur ne supporte pas la vidéo HTML5.
+      </video>
+      <p class="video-caption">
+        Regardez cette vidéo pour réviser les concepts avant de commencer le
+        quiz !
+      </p>
+    </div>
+
+    <section class="quiz">
+      <div class="quiz-container">
+        <h1>Quiz sur HTML, CSS et JavaScript</h1>
+        <p>
+          Testez vos connaissances et découvrez votre niveau en HTML, CSS et JS
+          !
+        </p>
+
+        <form id="quizForm">
+          <div class="quiz-question">
+            <h3>1. Que signifie HTML ?</h3>
+            <label
+              ><input type="radio" name="q1" value="a" /> HyperText Markup
+              Language</label
+            ><br />
+            <label
+              ><input type="radio" name="q1" value="b" /> Hyper Transfer Markup
+              Language</label
+            ><br />
+            <label
+              ><input type="radio" name="q1" value="c" /> HighText Machine
+              Language</label
+            >
+          </div>
+
+          <div class="quiz-question">
+            <h3>
+              2. Quelle propriété est utilisée pour changer la couleur du texte
+              en CSS ?
+            </h3>
+            <label><input type="radio" name="q2" value="a" /> font-color</label
+            ><br />
+            <label><input type="radio" name="q2" value="b" /> text-color</label
+            ><br />
+            <label><input type="radio" name="q2" value="c" /> color</label>
+          </div>
+
+          <div class="quiz-question">
+            <h3>3. Comment écrit-on une fonction en JavaScript ?</h3>
+            <label
+              ><input type="radio" name="q3" value="a" />
+              function:maFonction()</label
+            ><br />
+            <label
+              ><input type="radio" name="q3" value="b" /> function
+              maFonction()</label
+            ><br />
+            <label
+              ><input type="radio" name="q3" value="c" /> function =
+              maFonction()</label
+            >
+          </div>
+
+          <button type="submit" class="btn-submit">Soumettre le Quiz</button>
+        </form>
+
+        <div id="quizResults" class="quiz-results" style="display: none">
+          <h2>Vos Résultats</h2>
+          <p id="score"></p>
+          <table id="answersTable">
+            <thead>
+              <tr>
+                <th>Question</th>
+                <th>Votre Réponse</th>
+                <th>Bonne Réponse</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Fait avec <i class="fa fa-heart loveI"></i> par Yassine Maamri</p>
+    </footer>
+    <script src="quiz.js"></script>
+  </body>
+</html>
